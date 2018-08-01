@@ -13,13 +13,14 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandController {
 
      /**
-     * @param int $sourcePath (Full Source Path of server)
+     * @param string $sourcePath (Full Source Path of server)
      * @param string $task (The values can be: importString = Import a XML string importFile = Import a XML file preview = Generate a preview of the source from a XML string)
      * @param string $destinationPath (Path of local server relative to site root path)
      * @param string $notificationEmails (Comma-seprated email list)
      *
     */
 	public function importCommand($sourcePath,$task,$destinationPath,$notificationEmails) {
+
         $objectManager = GeneralUtility::makeInstance('TYPO3\\CMS\Extbase\\Object\\ObjectManager');
         // Get Configuration
         $configurationManager = $objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
@@ -38,9 +39,10 @@ class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
             $sftp = new SFTP($sftpDetail['host'],$sftpDetail['port'],60);
 
             if($sftp->login($sftpDetail['user'],$sftpDetail['password'])) {
+
                 // Download file
                 $sftp->get($sourcePath, PATH_site.$destinationPath);
-
+                $mailService = $objectManager->get('Dpool\\Website\\Service\\MailService');
                 // Preparing argument for l10n import
                 $_SERVER['argv'] = ['./typo3/cli_dispatch.phpsh',"l10nmgr_import","--task=".$task,"--file=".PATH_site.$destinationPath];
 
