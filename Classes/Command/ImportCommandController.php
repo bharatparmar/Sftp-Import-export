@@ -6,7 +6,7 @@ use phpseclib\Net\SFTP;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- * Class MigrateUploadFilesToFALCommandController
+ * Class ImportCommandController
  * @package Dpool\App\Command
  */
 

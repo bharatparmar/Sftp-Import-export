@@ -10,7 +10,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 
 /**
- * Class MigrateUploadFilesToFALCommandController
+ * Class ExportCommandController
  * @package Dpool\App\Command
  */
 
