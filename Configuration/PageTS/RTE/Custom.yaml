@@ -1,0 +1,97 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Minimal configuration for the editor
+editor:
+  config:
+    stylesSet:
+      - { name: 'Primary Button', element: 'a', attributes: { 'class': 'btn btn-primary' } }
+      - { name: 'Normal Text', element: 'span', attributes: { 'class': 'font-weight-normal' } }
+      - {name: "Normal Link", element: "a", attributes: {class: "internal-link"}}
+      - {name: "Overview List", element: "ul", attributes: {class: "overview-list"}}
+    extraPlugins:
+      - justify
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+    contentsCss: [EXT:website/Resources/Public/Styles/Site.min.css]
+    format_tags: "p;h1;h2;h3;h4"
+    toolbarGroups:
+      - { name: document, groups: [ mode, document, doctools ] }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: editing, groups: [ find, selection, spellchecker, editing ] }
+      - { name: forms, groups: [ forms ] }
+      - /
+      - { name: styles, groups: [ styles ] }
+      - { name: basicstyles, groups: [ basicstyles, cleanup ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align, bidi, paragraph ] }
+      - { name: links, groups: [ links ] }
+      - { name: insert, groups: [ insert ] }
+      - /
+      - { name: colors, groups: [ colors ] }
+      - { name: tools, groups: [ tools ] }
+      - { name: others, groups: [ others ] }
+      - { name: about, groups: [ about ] }
+
+    removeButtons:
+      - Save
+      - NewPage
+      - Preview
+      - Print
+      - Templates
+      - Cut
+      - Copy
+      - Paste
+      - PasteText
+      - PasteFromWord
+      - Undo
+      - Redo
+      - Find
+      - Replace
+      - SelectAll
+      - Scayt
+      - Form
+      - Checkbox
+      - Radio
+      - TextField
+      - Textarea
+      - Select
+      - Button
+      - ImageButton
+      - HiddenField
+      - Underline
+      - Subscript
+      - Strike
+      - Superscript
+      - CopyFormatting
+      - RemoveFormat
+      - Outdent
+      - Indent
+      - CreateDiv
+      - BidiLtr
+      - BidiRtl
+      - Language
+      - Anchor
+      - Image
+      - Flash
+      - Table
+      - HorizontalRule
+      - Smiley
+      - SpecialChar
+      - PageBreak
+      - Iframe
+      - Font
+      - FontSize
+      - TextColor
+      - BGColor
+      - Maximize
+      - About
+      - ShowBlocks

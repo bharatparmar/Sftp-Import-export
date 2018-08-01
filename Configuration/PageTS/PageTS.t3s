@@ -1,0 +1,7 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:website/Configuration/PageTS/Mod.t3s">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:website/Configuration/PageTS/Mod.BackendLayouts.t3s">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:website/Configuration/PageTS/RTE.t3s">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:website/Configuration/PageTS/TceForm.t3s">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:website/Configuration/PageTS/TceMain.t3s">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:website/Configuration/PageTS/Conditions.t3s">

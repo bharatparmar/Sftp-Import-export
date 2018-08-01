@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-02-07T17:08:32Z" product-name="website">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.CType.custom_hero_element">
+                <source>Hero Element (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_3column_teaser">
+                <source>3 Column Teaser (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_teaser">
+                <source>2 Column Teaser (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_text_image_right">
+                <source>2 Column Text image Right (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_text_image_left">
+                <source>2 Column Text image Left (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_text_media_right">
+                <source>2 Column Text media Right (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_text_media_left">
+                <source>2 Column Text media Left (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_text">
+                <source>2 Column Text (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_companies_logo">
+                <source>Image gallery (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_client_quote">
+                <source>Client Quote (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_our_services">
+                <source>Our Services (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_tab_content">
+                <source>Tab Content (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_text_fullwidth">
+                <source>2 Column Text Fullwidth (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_product_detail">
+                <source>Product Detail (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_2column_ubersicht">
+                <source>2 Column Ubersicht (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_product_hero_element">
+                <source>Product Hero Element (new website)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.custom_image_gallery">
+                <source>Image Gallery (new website)</source>
+            </trans-unit>
+            <trans-unit id="news.location">
+                <source>Location</source>
+            </trans-unit>
+            <trans-unit id="tt_content.image2">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tt_content.content_padding">
+                <source>Padding</source>
+            </trans-unit>
+             <trans-unit id="tt_content.custom_media_field">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="tt_content.bodytext2">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="tt_content.image3">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tt_content.bodytext3">
+                <source>Text</source>
+            </trans-unit>
+             <trans-unit id="tt_content.custom_imagecols">
+                <source>Image Columns</source>
+            </trans-unit>
+            <trans-unit id="tx_website_client_quote.sliders_item">
+                <source>Items</source>
+            </trans-unit>
+            <trans-unit id="tx_website_client_quote.sliders_item.tt_content">
+                <source>Content Id</source>
+            </trans-unit>
+            <trans-unit id="tx_website_client_quote.sliders_item.logo">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="tx_website_client_quote.sliders_item.author">
+                <source>Author</source>
+            </trans-unit>
+            <trans-unit id="tx_website_client_quote.sliders_item.quote">
+                <source>Quote</source>
+            </trans-unit>
+            <trans-unit id="tx_website_client_quote.sliders_item.case_study_link">
+                <source>Case Study Link</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.position">
+                <source>Position</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_contact.contact">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="tx_website_services.item">
+                <source>Items</source>
+            </trans-unit>
+            <trans-unit id="tx_website_services.item.icon">
+                <source>Icon</source>
+            </trans-unit>
+            <trans-unit id="tx_website_services.item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_services.item.subtitle">
+                <source>Subtitle</source>
+            </trans-unit>
+            <trans-unit id="tx_website_services.item.link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_content.item">
+                <source>Item</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_content.item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_content.item.more_item_text">
+                <source>More Item Text</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_content.item.more_item_link">
+                <source>More Items Link</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_content.item.tab_items">
+                <source>Tab Items</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_items.item">
+                <source>Items</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_items.item.image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tx_website_tab_items.item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_casestudy.case_study">
+                <source>Case Study</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_casestudy.image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_casestudy.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_casestudy.abstract">
+                <source>Abstract</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_casestudy.link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_application.application">
+                <source>Application</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_application.background_image">
+                <source>Background Image</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_application.intro_text">
+                <source>Intro Text</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_application.button_text">
+                <source>Button Text</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_application.item.markers">
+                <source>Markers</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.markers">
+                <source>Markers</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.item.application">
+                <source>Application</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.markers.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.markers.abstract">
+                <source>Abstract</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.markers.link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.markers.location_top">
+                <source>Location Top(%)</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_applicationmarkers.markers.location_left">
+                <source>Location Left(%)</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_serviceoffering.service_offering">
+                <source>Service Offering</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_serviceoffering.icon">
+                <source>Icon</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_serviceoffering.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_serviceoffering.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_serviceoffering.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="product_page_attribute">
+                <source>Product Page Attribute</source>
+            </trans-unit>
+            <trans-unit id="sys_category.tx_website_product_more_link">
+                <source>More Product link</source>
+            </trans-unit>
+            <trans-unit id="sys_category.tx_website_product_more_text">
+                <source>More Product Text</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_website_product_header">
+                <source>Product overview tab header</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_website_product_abstract">
+                <source>Product overview tab Abstract</source>
+            </trans-unit>
+
+            <trans-unit id="tx_website_domain_model_partner.title">
+                <source>Partners</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.homepage">
+                <source>Home page</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.logo">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.type">
+                <source>Types</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.information">
+                <source>Information</source>
+            </trans-unit>
+
+            <trans-unit id="tx_website_domain_model_partner.installations">
+                <source>Instalation</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.reference">
+                <source>References</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.bussiness_areas">
+                <source>Bussiness Areas</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.applications">
+                <source>Applications</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.erps">
+                <source>Erps</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.operating_systems">
+                <source>Operating Systems</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.integrations">
+                <source>Integrations</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partner.addresses">
+                <source>Addresses</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.title">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.is_headquarter">
+                <source>Is Headquater</source>
+            </trans-unit>
+             <trans-unit id="tx_website_domain_model_partneraddress.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.street">
+                <source>Street</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.zip">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partneraddress.country">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnertype.title">
+                <source>Types</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnertype.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnertype.color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerbussinessarea.title">
+                <source>Bussiness Area</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerbussinessarea.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfilterapplication.title">
+                <source>Filter Application</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfilterapplication.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfiltererp.title">
+                <source>Filter Erps</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfiltererp.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfilteros.title">
+                <source>Filter Operation systems</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfilteros.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfilterintegration.title">
+                <source>Filter Integrations</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_partnerfilterintegration.name">
+                <source>Name</source>
+            </trans-unit>
+
+            <trans-unit id="tx_website_domain_model_devices">
+                <source>Devices</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_devices.device_name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_devices.device_count">
+                <source>Count</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_devices.device_number">
+                <source>ID</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair">
+                <source>Repair</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.company">
+                <source>Company</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.name">
+                <source>Last Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.firstname">
+                <source>First Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.state">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.plz">
+                <source>Plz</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.diferent_billing_address">
+                <source>Different Billing Address</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.billing_company">
+                <source>Billing Company</source>
+            </trans-unit>
+
+            <trans-unit id="tx_website_domain_model_repair.billing_name">
+                <source>Billing Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.billing_firstname">
+                <source>Billing Firstname</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.billing_state">
+                <source>Billing Address</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.billing_plz">
+                <source>Billing Plz</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.billing_email">
+                <source>Billing Email</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.maintainance_contract">
+                <source>Is maintainance Contract</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.maintainance_id">
+                <source>Maintainance Id</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.cost_estimate">
+                <source>Cost Estimation</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.partner_in_action">
+                <source>Partner In Action</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.partner_name">
+                <source>Partner Name</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.problem_description">
+                <source>Problem Description</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_repair.note">
+                <source>Note</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product">
+                <source>Product</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.teaser">
+                <source>Teaser</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.images">
+                <source>Images</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.related_products">
+                <source><![CDATA[Related Products & Accessories]]></source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.attachmentpricelists">
+                <source>Price Lists</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.attachment_documentation">
+                <source>Technical Documents</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.attachment_marketing">
+                <source>Sales documents</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.title_visible">
+                <source>Show Title</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.teaser_visible">
+                <source>Show Teaser</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.description_visible">
+                <source>Show Description</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.images_visible">
+                <source>Show Images</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.related_products_visible">
+                <source><![CDATA[ Show Related Products & Accessories]]></source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.attachmentpricelists_visible">
+                <source>Show Price Lists</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.attachment_documentation_visible">
+                <source>Show Technical Documents</source>
+            </trans-unit>
+            <trans-unit id="tx_website_domain_model_product.attachment_marketing_visible">
+                <source>Show Sales documents</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

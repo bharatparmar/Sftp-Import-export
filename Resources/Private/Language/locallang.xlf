@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-30T10:23:15Z" product-name="website">
+		<header/>
+		<body>
+			<trans-unit id="copyright_text">
+				<source>© Copyright by PCS Systemtechnik GmbH</source>
+			</trans-unit>
+			<trans-unit id="all_company">
+				<source>ALLE KUNDEN</source>
+			</trans-unit>
+			<trans-unit id="productdetail.deviceGo">
+				<source>Gehen</source>
+      		</trans-unit>
+      		<trans-unit id="productdetail.deviceCome">
+				<source>Kommen</source>
+      		</trans-unit>
+      		<trans-unit id="productdetail.description">
+				<source>karte bitte</source>
+      		</trans-unit>
+			<trans-unit id="news_list_title">
+				<source>NEWS UND TERMINE</source>
+			</trans-unit>
+			<trans-unit id="contact_text">
+				<source>Kontakt</source>
+			</trans-unit>
+			<trans-unit id="telephone">
+				<source>Tel</source>
+			</trans-unit>
+			<trans-unit id="fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="contact_form">
+				<source>KontaktFormular</source>
+			</trans-unit>
+			<trans-unit id="twitter">
+				<source>twitter</source>
+			</trans-unit>
+			<trans-unit id="xing">
+				<source>xing</source>
+			</trans-unit>
+			<trans-unit id="youtube_play">
+				<source>youtube-play</source>
+			</trans-unit>
+			<trans-unit id="contact_person">
+				<source>Ihr pcs ansprechpartner</source>
+			</trans-unit>
+			<trans-unit id="to_contactForm">
+				<source>Zum KontaktFormular</source>
+			</trans-unit>
+			<trans-unit id="twitter_news">
+				<source>pcs Twitter News</source>
+			</trans-unit>
+			<trans-unit id="case_study_to_see">
+				<source>Case Study ansehen</source>
+			</trans-unit>
+			<trans-unit id="news_more_link">
+				<source>Case Study ansehen</source>
+			</trans-unit>
+			<trans-unit id="to_overview">
+				<source>Zur Übersicht</source>
+			</trans-unit>
+			<trans-unit id="to_product_more_link">
+				<source>Hier finden Sie alle %s von PCS</source>
+			</trans-unit>
+			<trans-unit id="case_study">
+				<source>Case Studies</source>
+			</trans-unit>
+			<trans-unit id="more_info">
+				<source>MEHR INFORMATIONEN</source>
+			</trans-unit>
+			<trans-unit id="case_study_subtitle">
+				<source>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</source>
+			</trans-unit>
+			<trans-unit id="zum">
+				<source>Zum</source>
+			</trans-unit>
+			<trans-unit id="downloads">
+				<source>Downloads</source>
+			</trans-unit>
+			<trans-unit id="partner.search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="partner.ourPartner">
+				<source>UNSERE PARTNER</source>
+			</trans-unit>
+			<trans-unit id="partner.tele">
+				<source>Tele</source>
+			</trans-unit>
+			<trans-unit id="partner.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="partner.searchCriteria">
+				<source>Suchkriterien</source>
+			</trans-unit>
+			<trans-unit id="partner.detail">
+				<source>Mehr Details</source>
+			</trans-unit>
+			<trans-unit id="partner.address">
+				<source>ADRESSE</source>
+			</trans-unit>
+			<trans-unit id="partner.contact">
+				<source>Kontact</source>
+			</trans-unit>
+			<trans-unit id="partner.telefax">
+				<source>Telefax</source>
+			</trans-unit>
+			<trans-unit id="partner.website">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="partner.desc">
+				<source>BESCHREIBUNG</source>
+			</trans-unit>
+			<trans-unit id="partner.branchen">
+				<source>BRANCHEN</source>
+			</trans-unit>
+			<trans-unit id="partner.applications">
+				<source>Application</source>
+			</trans-unit>
+			<trans-unit id="partner.erps">
+				<source>ERPS</source>
+			</trans-unit>
+			<trans-unit id="partner.integrations">
+				<source>Integration</source>
+			</trans-unit>
+			<trans-unit id="partner.operatingSystem">
+				<source>BETRIEBSSYSTEM</source>
+			</trans-unit>
+			<trans-unit id="partner.selectApplications">
+				<source>Select Applications</source>
+			</trans-unit>
+			<trans-unit id="partner.selectErps">
+				<source>Select Erps</source>
+			</trans-unit>
+			<trans-unit id="partner.selectOS">
+				<source>Select Os</source>
+			</trans-unit>
+			<trans-unit id="partner.selectIntegrations">
+				<source>Select Integrations</source>
+			</trans-unit>
+			<trans-unit id="partner.moreAddress">
+				<source>More Address</source>
+			</trans-unit>
+			<trans-unit id="partner.selected">
+				<source>selected</source>
+			</trans-unit>
+
+
+			<trans-unit id="latestHeader">
+
+				<source>Latest News</source>
+			</trans-unit>
+			<trans-unit id="mandatoryText">
+
+         		<source>*Mandatory</source>
+      		</trans-unit>
+
+      		<trans-unit id="legend">
+
+				<source>PCS Contact Form</source>
+      		</trans-unit>
+      		<trans-unit id="salutation">
+
+				<source>Salutation</source>
+      		</trans-unit>
+      		<trans-unit id="mr">
+
+				<source>Mr.</source>
+      		</trans-unit>
+      		<trans-unit id="ms">
+
+				<source>Ms.</source>
+      		</trans-unit>
+      		<trans-unit id="firstname">
+
+				<source>Firstname</source>
+      		</trans-unit>
+      		<trans-unit id="lastname">
+
+				<source>Lastname</source>
+      		</trans-unit>
+      		<trans-unit id="company">
+
+				<source>Company</source>
+      		</trans-unit>
+      		<trans-unit id="position">
+
+				<source>Position</source>
+      		</trans-unit>
+      		<trans-unit id="address">
+
+				<source>Address</source>
+      		</trans-unit>
+			<trans-unit id="zip-city">
+
+				<source>Zip, City</source>
+      		</trans-unit>
+      		<trans-unit id="email">
+
+				<source>Email</source>
+      		</trans-unit>
+      		<trans-unit id="telefone">
+
+				<source>Tel.</source>
+      		</trans-unit>
+      		<trans-unit id="partnerSolution">
+
+				<source><![CDATA[Partner solution <br />is used]]></source>
+      		</trans-unit>
+      		<trans-unit id="partnerName">
+
+				<source>Name of the partner</source>
+      		</trans-unit>
+      		<trans-unit id="deviceName">
+
+				<source>Device name</source>
+      		</trans-unit>
+      		<trans-unit id="deviceNumber">
+
+				<source>Serial number</source>
+      		</trans-unit>
+      		<trans-unit id="deviceCount">
+
+				<source>Number</source>
+      		</trans-unit>
+      		<trans-unit id="addDevice">
+
+				<source>add another devices</source>
+      		</trans-unit>
+      		<trans-unit id="removeDevice">
+
+				<source>remove last devices</source>
+      		</trans-unit>
+      		<trans-unit id="devices">
+
+				<source>Devices</source>
+      		</trans-unit>
+      		<trans-unit id="device1">
+
+				<source>Device 1</source>
+      		</trans-unit>
+      		<trans-unit id="additionalInfo">
+
+				<source>Additional Information</source>
+      		</trans-unit>
+      		<trans-unit id="additionalNote">
+
+				<source><![CDATA[Notes<br />(e.g. special sendback address)]]></source>
+      		</trans-unit>
+      		<trans-unit id="submit">
+
+				<source>send</source>
+      		</trans-unit>
+      		<trans-unit id="copy">
+
+				<source>Please send me a copy of my request to my email address.</source>
+      		</trans-unit>
+      		<trans-unit id="note">
+
+				<source>By sending this form, you agree that we will use your data for processing your request in accordance with our privacy policy.</source>
+      		</trans-unit>
+      		<trans-unit id="is_error">
+
+				<source>Fields marked with a * must be filled!</source>
+      		</trans-unit>
+      		<trans-unit id="yes">
+
+				<source>yes</source>
+      		</trans-unit>
+      		<trans-unit id="no">
+
+				<source>no</source>
+      		</trans-unit>
+      		<trans-unit id="differentInvoiceAddress">
+
+				<source>Different invoice address</source>
+      		</trans-unit>
+      		<trans-unit id="invoiceAddress">
+
+				<source>Invoice address</source>
+      		</trans-unit>
+      		<trans-unit id="contactData">
+
+				<source>Contact data</source>
+      		</trans-unit>
+      		<trans-unit id="repairData">
+
+				<source>Repair data</source>
+      		</trans-unit>
+      		<trans-unit id="additionalData">
+
+				<source>Additional data</source>
+      		</trans-unit>
+      		<trans-unit id="costEstimate">
+
+				<source>Cost extimate</source>
+      		</trans-unit>
+      		<trans-unit id="costEstimateNote">
+
+				<source>For the estimation we charge a flat rate of 50 €. This amount will be credited to you with a repair.</source>
+      		</trans-unit>
+      		<trans-unit id="maintenanceContract">
+
+				<source>Maintenance contract</source>
+      		</trans-unit>
+      		<trans-unit id="maintenanceID">
+
+				<source>Maintenance number</source>
+      		</trans-unit>
+      		<trans-unit id="securityQuestion">
+
+				<source>Security Question</source>
+      		</trans-unit>
+      		<trans-unit id="required_fields">
+
+				<source>*required fields!</source>
+      		</trans-unit>
+      		<trans-unit id="dear">
+
+				<source>Dear</source>
+      		</trans-unit>
+      		<trans-unit id="thanksForYourRequest">
+
+				<source>thank you for your request. We will get back to you as soon as possible. The data we received from you is listed below. If there are any changes or corrections send an email to intus@pcs.com and refer to this email.</source>
+      		</trans-unit>
+      		<trans-unit id="newRequest">
+
+				<source>New reapair request</source>
+      		</trans-unit>
+      		<trans-unit id="newRequest">
+
+				<source>New reapair request</source>
+      		</trans-unit>
+      		<trans-unit id="userFilledOutForm">
+
+				<source>A customer has filled out a repair request form on the website. The contact, invoice and repair data is listed below.</source>
+      		</trans-unit>
+      		<trans-unit id="your">
+
+				<source>Your</source>
+      		</trans-unit>
+      		<trans-unit id="kindRegards">
+
+				<source>Kind regards</source>
+      		</trans-unit>
+      		<trans-unit id="hint">
+				<source>Tip: The device type and the device associated serial number (SN) is usually below the terminal. If this is not the case, try to find a similar nameplate like the following:</source>
+      		</trans-unit>
+      		<trans-unit id="product.pricelist">
+				<source>Price List</source>
+      		</trans-unit>
+      		<trans-unit id="product.documentation">
+				<source>Documentation</source>
+      		</trans-unit>
+      		<trans-unit id="product.marketing">
+				<source>Marketing</source>
+      		</trans-unit>
+      		<trans-unit id="product.marketing">
+				<source>Marketing</source>
+      		</trans-unit>
+      		<trans-unit id="product.relatedProduct">
+				<source>Related Products</source>
+      		</trans-unit>
+
+
+
+
+
+		</body>
+	</file>
+</xliff>

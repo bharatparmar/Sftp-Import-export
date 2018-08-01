@@ -1,0 +1,23 @@
+mod.web_layout.BackendLayouts {
+	# default layout for all pages which have no special fancy layout
+	0 {
+		title = 1 Column 100%
+		config {
+			backend_layout {
+				colCount = 1
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+						  1 {
+							  name = Content
+							  colPos = 0
+						  }
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,6 @@
+Resources/.sass-cache
+Resources/node_modules
+.idea
+.project
+.DS*
+._*
