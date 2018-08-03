@@ -1,0 +1,8 @@
+#cat=sftp;type=string;label=sftp host
+server.host =
+#cat=sftp;type=string;label=sftp user
+server.user =
+#cat=sftp;type=string;label=sftp password
+server.password =
+#cat=sftp;type=string;label=sftp port
+server.port =

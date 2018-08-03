@@ -24,8 +24,10 @@ class ExportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
      * @param int $targetLanguageId (Tagetlanguage Id)
     */
 
-	public function exportCommand($configurationId,$format="CATXML",$notificationEmails,$destinationPath,$targetLanguageId) {
+    public function exportCommand($configurationId,$format="CATXML",$notificationEmails,$destinationPath,$targetLanguageId) {
 
+
+        $sftp = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['website']);
 
         $objectManager = GeneralUtility::makeInstance('TYPO3\\CMS\Extbase\\Object\\ObjectManager');
          // Get Configuration
@@ -35,25 +37,25 @@ class ExportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
         $settings = $extbaseFrameworkConfiguration['plugin.']['tx_website_website.']['settings.'];
 
         $sftpDetail = [
-            'host'=>$settings['server.']['host'],
-            'user'=>$settings['server.']['user'],
-            'password'=>$settings['server.']['password'],
-            'port'=>$settings['server.']['port']
+            'host'=>$sftp['server.']['host'],
+            'user'=>$sftp['server.']['user'],
+            'password'=>$sftp['server.']['password'],
+            'port'=>$sftp['server.']['port']
 
         ];
 
+
         $mailService = $objectManager->get('Dpool\\Website\\Service\\MailService');
 
-
-/*./typo3/cli_dispatch.phpsh l10nmgr_export --format=CATXLF --config=2 --target=3  --hidden=TRUE --updated=FALSE*/
-        $_SERVER['argv'] = ['./typo3/cli_dispatch.phpsh',"l10nmgr_export","--format=".$format,"--config=".$configurationId,"--target=".$targetLanguageId,"--hidden=TRUE","--updated=FALSE"];
-        $cleanerObj = GeneralUtility::makeInstance(\Localizationteam\L10nmgr\Cli\Export::class);
-        $cleanerObj->cli_main($_SERVER['argv']);
-
         try {
-            $sftp = new SFTP($sftpDetail['host'],22,60);
+            $sftp = new SFTP($sftpDetail['host'],$sftpDetail['port'],60);
             if($sftp->login($sftpDetail['user'],$sftpDetail['password']))
             {
+                /*./typo3/cli_dispatch.phpsh l10nmgr_export --format=CATXLF --config=2 --target=3  --hidden=TRUE --updated=FALSE*/
+                $_SERVER['argv'] = ['./typo3/cli_dispatch.phpsh',"l10nmgr_export","--format=".$format,"--config=".$configurationId,"--target=".$targetLanguageId,"--hidden=TRUE","--updated=FALSE"];
+                $cleanerObj = GeneralUtility::makeInstance(\Localizationteam\L10nmgr\Cli\Export::class);
+                $cleanerObj->cli_main($_SERVER['argv']);
+
                 $results = $this->getLatestExported();
                 $sftp->put($destinationPath.$results['filename'],PATH_site.'uploads/tx_l10nmgr/jobs/out/'.$results['filename'],SFTP::SOURCE_LOCAL_FILE);
 
@@ -74,6 +76,18 @@ class ExportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
                 }
 
             }
+            else{
+
+                $message = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Messaging\FlashMessage::class,
+                   'Failed',
+                   'Authentication Failed', // [optional] the header
+                   \TYPO3\CMS\Core\Messaging\FlashMessage::ERROR,
+                   true
+                );
+                $flashMessageService = $objectManager->get(\TYPO3\CMS\Core\Messaging\FlashMessageService::class);
+                $messageQueue = $flashMessageService->getMessageQueueByIdentifier();
+                $messageQueue->addMessage($message);
+            }
         }
         catch(Exception $e) {
             echo 'Message: ' .$e->getMessage();
@@ -88,7 +102,7 @@ class ExportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
      *
      * @return mixed
      */
-	private function getLatestExported() {
+    private function getLatestExported() {
 
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_l10nmgr_exportdata');
         $result = $queryBuilder
@@ -102,7 +116,7 @@ class ExportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
             ->execute();
 
             return $result->fetch();
-	}
+    }
 
 
 }

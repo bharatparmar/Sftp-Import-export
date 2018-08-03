@@ -21,6 +21,7 @@ class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
     */
 	public function importCommand($sourcePath,$task,$destinationPath,$notificationEmails) {
 
+        $sftp = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['website']);
         $objectManager = GeneralUtility::makeInstance('TYPO3\\CMS\Extbase\\Object\\ObjectManager');
         // Get Configuration
         $configurationManager = $objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
@@ -28,10 +29,10 @@ class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
         $settings = $extbaseFrameworkConfiguration['plugin.']['tx_website_website.']['settings.'];
 
         $sftpDetail = [
-            'host'=>$settings['server.']['host'],
-            'user'=>$settings['server.']['user'],
-            'password'=>$settings['server.']['password'],
-            'port'=>$settings['server.']['port']
+            'host'=>$sftp['server.']['host'],
+            'user'=>$sftp['server.']['user'],
+            'password'=>$sftp['server.']['password'],
+            'port'=>$sftp['server.']['port']
 
         ];
 
