@@ -40,17 +40,44 @@ class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
             $sftp = new SFTP($sftpDetail['host'],$sftpDetail['port'],60);
 
             if($sftp->login($sftpDetail['user'],$sftpDetail['password'])) {
+                $allFiles = $sftp->nlist($sourcePath,true);
+                $files = [];
+                foreach($allFiles as $file){
 
-                // Download file
-                $sftp->get($sourcePath, PATH_site.$destinationPath);
+
+                   if($sftp->is_file($sourcePath.$file))
+                   {
+                        $path_info = pathinfo($sourcePath.$file);
+                        if($path_info['extension']=='xml'){
+                            $files[] = $file;
+                        }
+                   }
+
+                }
+
+                // Download file and import
+                chmod(PATH_site.$destinationPath, 755);
+                foreach($files as $file){
+                    $path_info = pathinfo($sourcePath.$file);
+                    $sftp->get($sourcePath.$file, PATH_site.$destinationPath.$path_info['basename']);
+
+                    $_SERVER['argv'] = ['./typo3/cli_dispatch.phpsh',"l10nmgr_import","--task=".$task,"--file=".PATH_site.$destinationPath.$path_info['basename']];
+
+                    $importObject = GeneralUtility::makeInstance(\Localizationteam\L10nmgr\Cli\Import::class);
+                    $importObject->cli_main($_SERVER['argv']);
+                    // delete local files so that
+                    //chmod(PATH_site.$destinationPath.$path_info['basename'], 755);
+                    //unlink(PATH_site.$destinationPath.$path_info['basename']);
+
+                }
+                // delete file once import finished
+                foreach($files as $file){
+                    $sftp->delete($sourcePath.$file);
+                }
+
                 $mailService = $objectManager->get('Dpool\\Website\\Service\\MailService');
-                // Preparing argument for l10n import
-                $_SERVER['argv'] = ['./typo3/cli_dispatch.phpsh',"l10nmgr_import","--task=".$task,"--file=".PATH_site.$destinationPath];
 
-                $importObject = GeneralUtility::makeInstance(\Localizationteam\L10nmgr\Cli\Import::class);
-                $importObject->cli_main($_SERVER['argv']);
-
-                // Send notification
+               // Send notification
                 $recievers = explode(',',$notificationEmails);
                 if(count($recievers)>0){
                     foreach($recievers as $reciever){
@@ -61,7 +88,7 @@ class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
                             'senderEmail' => $settings['senderEmail'],
                             'senderName' => $settings['senderName'],
                             'subject' => $settings['importSubject'],
-                            'filename' => PATH_site.$destinationPath,
+
                         ];
                         $mailService->sendMail($recieverMailArguments);
                     }
@@ -70,7 +97,7 @@ class ImportCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandC
             }
         }
         catch(Exception $e) {
-            echo 'Message: ' .$e->getMessage();
+            $this->output($e->getMessage());
         }
         return true;
 
